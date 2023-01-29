@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/light_grey"
+        android:textSize="18sp"
+        tools:text="11.11.2022" />
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:textColor="@color/light_grey"
+        android:textSize="18sp"
+        tools:text="+1000" />
+
+
+</LinearLayout>
