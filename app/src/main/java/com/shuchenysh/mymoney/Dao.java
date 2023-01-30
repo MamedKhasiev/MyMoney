@@ -5,6 +5,8 @@ import androidx.room.Query;
 
 import java.util.List;
 
+import io.reactivex.rxjava3.core.Completable;
+
 @androidx.room.Dao
 public interface Dao {
 
@@ -12,7 +14,7 @@ public interface Dao {
     List<Item> getMoney();
 
     @Insert
-    void add (Item item);
+    Completable add (Item item);
 
     @Query("DELETE FROM money WHERE id = :id")
     void remove(int id);

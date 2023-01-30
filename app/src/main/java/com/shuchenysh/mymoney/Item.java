@@ -1,5 +1,6 @@
 package com.shuchenysh.mymoney;
 
+import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
@@ -9,8 +10,14 @@ public class Item {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
+
+    @ColumnInfo(name = "date")
     private String date;
+
+    @ColumnInfo(name = "money")
     private String money;
+
+    @ColumnInfo(name = "sum")
     private int sum;
 
     public Item(int id, String date, String money, int sum) {
